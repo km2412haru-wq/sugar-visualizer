@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | 砂糖ビジュアライザー</title>
+<meta name="robots" content="noindex">
+<style>
+:root { --bg: #eef1f4; --ink: #17212b; --ink-2: #4f5c69; --accent: #2456c9; --line: #d5dce3; }
+@media (prefers-color-scheme: dark) { :root { --bg: #10151b; --ink: #e8edf2; --ink-2: #9aa7b4; --accent: #7da2ff; --line: #2b3643; } }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.8 "Zen Maru Gothic", "Hiragino Sans", "Yu Gothic", sans-serif; padding: 16px max(16px, env(safe-area-inset-right)) 40px max(16px, env(safe-area-inset-left)); }
+main { max-width: 640px; margin: 0 auto; }
+h1 { font-size: 22px; margin: 8px 0 4px; }
+h2 { font-size: 16px; margin: 28px 0 4px; padding-top: 12px; border-top: 1px solid var(--line); }
+p, li { color: var(--ink); } .meta { color: var(--ink-2); font-size: 13px; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+<p><a href="./">← アプリに戻る</a></p>
+<h1>プライバシーポリシー</h1>
+<p class="meta">砂糖ビジュアライザー(以下「本サービス」)の運営者: 【運営者の名前またはハンドル名】 / 連絡先: 【メールアドレスなど】</p>
+
+<h2>1. 写真の扱い</h2>
+<ul>
+<li>写真を選ぶと、端末の中で縮小(長辺1280px)してから、砂糖の量の推定のために、本サービスのサーバー(Cloudflare Workers)に送ります。</li>
+<li>サーバーは、その写真を、推定を行う Anthropic 社の API(Claude)に転送します。推定結果を受け取ったら、写真は破棄します。<strong>運営者は、写真を保存しません。見ることもありません。</strong></li>
+<li>Anthropic 社での扱いは、同社の規約とプライバシーポリシーに従います。</li>
+<li>人の顔や個人情報が写った写真は、送らないでください。</li>
+</ul>
+
+<h2>2. 集める情報</h2>
+<ul>
+<li><strong>写真以外に、名前・メールアドレス・位置情報などは集めません。</strong>アカウント登録もありません。</li>
+<li>使いすぎの防止のために、IPアドレスに日付と秘密の文字列を混ぜて変換した値(元のIPアドレスには戻せません)を、利用回数の数え上げにだけ使います。この値は、最長で2日間で消えます。</li>
+<li>サーバーの運用基盤(Cloudflare、GitHub)が、障害対応などのために、アクセスの記録を取ることがあります。</li>
+<li>本サービスは、広告や、行動を追跡する仕組みを使いません。</li>
+</ul>
+
+<h2>3. 外部のサービス</h2>
+<ul>
+<li>ページの表示には、Google Fonts(文字のデザインの配信)を使います。このとき、閲覧情報がGoogleに送られます。</li>
+<li>公開は GitHub Pages、推定サーバーは Cloudflare Workers、推定は Anthropic API です。</li>
+</ul>
+
+<h2>4. 数値について</h2>
+<ul>
+<li>表示する砂糖の量は、写真の見た目と一般的なレシピから推定した<strong>目安</strong>で、実際の量とは大きく違うことがあります。</li>
+<li>「砂糖」は、ショ糖に限らず、ぶどう糖・果糖・はちみつ・シロップ・果汁などの糖類をまとめて、グラニュー糖(スティック1本3g)に換算したものです。1日の目安25gは、WHOの遊離糖類の目安(大人)にもとづきます。</li>
+<li>大人向けの目安です。子どもの摂取量の判断には使えません。</li>
+<li><strong>糖質制限や血糖の管理、病気の診断・治療・予防には使えません。</strong>食事や健康について心配があるときは、医師や管理栄養士に相談してください。</li>
+<li>食べることへの不安が強いときは、無理に使わず、専門の相談先に相談してください。</li>
+</ul>
+
+<h2>5. 変更</h2>
+<p>このポリシーは、必要に応じて変更します。変更後は、このページに掲載します。</p>
+<p class="meta">制定: 2026年10月29日</p>
+</main>
+</body>
+</html>
